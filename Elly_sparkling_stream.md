@@ -159,7 +159,7 @@ And we are done. If we call these functions on every minbatch, we consistently, 
 ## Conclusion
 Working with streams is very fun. It is interesting to keep the dynamic updates per mini batches running, too and that is a small price to pay for the ease of work to for each execution to take just a little bit of time, and not get the computer stuck on too much data. I would say that is my favourite framework, so far.
 
-See the whole notebook [Here](https://github.com/rubigdata/sparkling-streams-2020-Elly-B/Spark_Streaming_Elly.zpln/)
+See the whole notebook [Here](https://github.com/rubigdata/sparkling-streams-2020-Elly-B/blob/master/Spark%20Streaming_Elly.zpln)
 
 Have a great day!
 
