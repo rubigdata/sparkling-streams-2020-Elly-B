@@ -69,7 +69,9 @@ var total_runes = 0
 Then, when we count the runes sold in this batch:
 val counted  = spark.sql("select COUNT(material) FROM runes")
 Now, counted is a framework with only one element under column count(material).  Then, the fight  begins, to turn that into the Int, that we can add to total_runes:
+
 *val c:Int = counted.first().get(0).toString.toInt
+
 type c  //c: Int = 21610*
 
  Now, finally, we can add it to total runes every time we get a new batch:
@@ -154,10 +156,10 @@ Then we sum tow two tables, as we described above:
 
 And we are done. If we call these functions on every minbatch, we consistently, we will eventually get those statistics for the entire dataset.
 
-### Conclusion
+## Conclusion
 Working with streams is very fun. It is interesting to keep the dynamic updates per mini batches running, too and that is a small price to pay for the ease of work to for each execution to take just a little bit of time, and not get the computer stuck on too much data. I would say that is my favourite framework, so far.
 
-See the whole notebook [Here](https://github.com/rubigdata/sparkling-streams-2020-Elly-B/Spark Streaming_Elly.zpln/)
+See the whole notebook [Here](https://github.com/rubigdata/sparkling-streams-2020-Elly-B/Spark_Streaming_Elly.zpln/)
 
 Have a great day!
 
